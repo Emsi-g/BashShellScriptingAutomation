@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # This script is created by Emsi-G
-# This should run in a bastion server, and ssh to your private servers using private IP Address.
+# This should run in a bastion server, and ssh to your private servers using a private IP Address.
 # This will get the disk usage, free ram, and check if the servers are running.
 
-PATH_TO_YOUR_PEM=/home/user/keys #Path to your keys, make sure remove the passphrase key
+PATH_TO_YOUR_PEM=/home/user/keys #Path to your keys, make sure to remove the passphrase key
 AS_APP_PATH_TO_YOUR_WEBSERVER=/home/admin/servers/api #Path to your webserver
-PORTWeb="21322" #SSH Port, 22 is default
-PORTApp="21323" #SSH Port, 22 is default
-PIPWeb='10.10.22.101' #Port of your webserver
-PIPApp='10.10.22.102' #Port of your appserver
+PORTWeb="21322" #SSH Port, 22 is the default
+PORTApp="21323" #SSH Port, 22 is the default
+PIPWeb='10.10.22.101' #Private IP of your webserver
+PIPApp='10.10.22.102' #Private IP of your appserver
 USER="user"
 current_date=$(date)
 
